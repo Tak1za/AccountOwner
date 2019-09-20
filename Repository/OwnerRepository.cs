@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities;
+using Entities.ExtendedModels;
 using Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,14 @@ namespace Repository
         public Owner GetOwnerById(Guid ownerId)
         {
             return FindByCondition(owner => owner.Id.Equals(ownerId)).DefaultIfEmpty(new Owner()).FirstOrDefault();
+        }
+
+        public OwnerExtended GetOwnerWithDetails(Guid ownerId)
+        {
+            return new OwnerExtended(GetOwnerById(ownerId))
+            {
+                Accounts = RepositoryContext.Accounts.Where(a => a.OwnerId == ownerId)
+            };
         }
     }
 }

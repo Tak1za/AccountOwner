@@ -5,3 +5,5 @@
 2019-09-21 01:50:11.2622 INFO Returned all owners from database
 2019-09-21 01:50:46.7715 INFO Return owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641906
 2019-09-21 01:50:56.0491 ERROR Owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641905, is not present.
+2019-09-21 02:04:21.4808 ERROR Owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641905, is not present.
+2019-09-21 02:04:28.9150 INFO Returned owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641906
