@@ -16,6 +16,12 @@ namespace Repository
 
         }
 
+        public void CreateOwner(Owner owner)
+        {
+            owner.Id = Guid.NewGuid();
+            Create(owner);
+        }
+
         public IEnumerable<Owner> GetAllOwners()
         {
             return FindAll().OrderBy(ow => ow.Name).ToList();

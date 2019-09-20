@@ -7,3 +7,10 @@
 2019-09-21 01:50:56.0491 ERROR Owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641905, is not present.
 2019-09-21 02:04:21.4808 ERROR Owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641905, is not present.
 2019-09-21 02:04:28.9150 INFO Returned owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641906
+2019-09-21 02:23:50.5779 INFO Returned all owners from database
+2019-09-21 02:24:05.6293 INFO Return owner with id: 261e1685-cf26-494c-b17c-3546e65f5620
+2019-09-21 02:24:13.5737 INFO Returned owner with id: 261e1685-cf26-494c-b17c-3546e65f5620
+2019-09-21 02:26:17.6307 INFO Returned all owners from database
+2019-09-21 02:41:16.5137 INFO Returned all owners from database
+2019-09-21 02:41:24.4193 INFO Return owner with id: 261e1685-cf26-494c-b17c-3546e65f5620
+2019-09-21 02:41:27.7528 ERROR Owner with id: 261e1685-cf26-494c-b17c-3546e65f5624, is not present.

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Contracts;
+using Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Entities.Extensions;
 
 namespace AccountOwnerServer.Controllers
 {
@@ -39,14 +41,14 @@ namespace AccountOwnerServer.Controllers
             }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "OwnerById")]
         public IActionResult GetOwnerById(Guid id)
         {
             try
             {
                 var owner = _repository.Owner.GetOwnerById(id);
 
-                if (owner.Id.Equals(Guid.Empty))
+                if (owner.IsEmptyObject())
                 {
                     _logger.LogError($"Owner with id: {id}, is not present.");
                     return NotFound();
@@ -71,7 +73,7 @@ namespace AccountOwnerServer.Controllers
             {
                 var owner = _repository.Owner.GetOwnerWithDetails(id);
 
-                if (owner.Id.Equals(Guid.Empty))
+                if (owner.IsEmptyObject())
                 {
                     _logger.LogError($"Owner with id: {id}, is not present.");
                     return NotFound();
@@ -85,6 +87,35 @@ namespace AccountOwnerServer.Controllers
             catch(Exception ex)
             {
                 _logger.LogError($"Something went wrong inside GetOwnerWithDetails action: {ex.Message}");
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult CreateOwner([FromBody]Owner owner)
+        {
+            try
+            {
+                if(owner.IsEmptyObject())
+                {
+                    _logger.LogError("Owner object sent from client is null.");
+                    return BadRequest("Owner object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid owner object sent from client");
+                    return BadRequest("Invalid model object");
+                }
+
+                _repository.Owner.CreateOwner(owner);
+                _repository.Save();
+
+                return CreatedAtRoute("OwnerById", new { id = owner.Id }, owner);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside CreateOwner : {ex.Message}");
                 return StatusCode(500, "Internal Server Error");
             }
         }
