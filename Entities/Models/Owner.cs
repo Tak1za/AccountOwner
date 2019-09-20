@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Entities.Models
 {
     [Table("owner")]
-    class Owner
+    public class Owner
     {
         [Key]
         public Guid OwnerId { get; set; }

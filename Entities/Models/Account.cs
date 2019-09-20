@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Entities.Models
 {
     [Table("account")]
-    class Account
+    public class Account
     {
         [Key]
         public Guid AccountId { get; set; }

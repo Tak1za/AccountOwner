@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using NLog;
 
 namespace AccountOwnerServer
@@ -32,6 +31,8 @@ namespace AccountOwnerServer
             services.ConfigureLoggerService();
 
             services.ConfigureMySqlContext(Configuration);
+
+            services.ConfigureRepositoryWrapper();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
