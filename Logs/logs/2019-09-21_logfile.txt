@@ -1,0 +1,7 @@
+2019-09-21 01:38:20.2393 INFO Returned all owners from database
+2019-09-21 01:40:59.9524 INFO Returned all owners from database
+2019-09-21 01:42:15.2361 INFO Returned all owners from database
+2019-09-21 01:43:58.2580 INFO Returned all owners from database
+2019-09-21 01:50:11.2622 INFO Returned all owners from database
+2019-09-21 01:50:46.7715 INFO Return owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641906
+2019-09-21 01:50:56.0491 ERROR Owner with id: 24fd81f8-d58a-4bcc-9f35-dc6cd5641905, is not present.
