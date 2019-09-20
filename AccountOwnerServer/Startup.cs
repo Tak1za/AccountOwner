@@ -31,6 +31,8 @@ namespace AccountOwnerServer
 
             services.ConfigureLoggerService();
 
+            services.ConfigureMySqlContext(Configuration);
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
