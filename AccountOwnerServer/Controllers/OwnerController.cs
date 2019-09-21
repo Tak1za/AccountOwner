@@ -30,7 +30,7 @@ namespace AccountOwnerServer.Controllers
             {
                 var owners = _repository.Owner.GetAllOwners();
 
-                _logger.LogInfo($"Returned all owners from database");
+                _logger.LogInfo("Returned all owners from database");
 
                 return Ok(owners);
             }
@@ -96,7 +96,7 @@ namespace AccountOwnerServer.Controllers
         {
             try
             {
-                if(owner.IsEmptyObject())
+                if(owner.IsObjectNull())
                 {
                     _logger.LogError("Owner object sent from client is null.");
                     return BadRequest("Owner object is null");
@@ -138,7 +138,7 @@ namespace AccountOwnerServer.Controllers
                 }
 
                 var dbOwner = _repository.Owner.GetOwnerById(id);
-                if (dbOwner.IsObjectNull())
+                if (dbOwner.IsEmptyObject())
                 {
                     _logger.LogError($"Owner with id: {id} is not present");
                     return NotFound();
