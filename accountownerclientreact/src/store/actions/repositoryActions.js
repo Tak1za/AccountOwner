@@ -10,6 +10,7 @@ const getDataSuccess = data =>{
 }
 
 export const getData = (url, props) =>{
+    console.log(url);
     return (dispatch) =>{
         axios.get(url).then(response => {
             dispatch(getDataSuccess(response.data));
@@ -21,7 +22,7 @@ export const getData = (url, props) =>{
 }
 
 //POST DATA
-const postDataSuccess = data => {
+const postDataSuccess = response => {
     return{
         type: actionTypes.POST_DATA_SUCCESS,
         response: response
@@ -40,7 +41,7 @@ export const postData = (url, obj, props) => {
 }
 
 //PUT DATA
-const putDataSuccess = data =>{
+const putDataSuccess = response =>{
     return{
         type: actionTypes.PUT_DATA_SUCCESS,
         response: response
@@ -59,7 +60,7 @@ export const putData = (url, obj, props) =>{
 }
 
 //DELETE DATA
-const deleteDataSuccess = data => {
+const deleteDataSuccess = response => {
     return{
         type: actionTypes.DELETE_DATA_SUCCESS,
         response: response
