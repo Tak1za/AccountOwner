@@ -1,0 +1,8 @@
+.notFound{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: #f10b0b;
+    position: relative;
+    text-shadow: 2px 2px 2px gray;
+}
