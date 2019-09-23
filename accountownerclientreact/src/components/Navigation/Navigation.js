@@ -16,7 +16,7 @@ const Navigation = props => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavLink to={'/owner-list'} exact>Owner Actions</NavLink>
-            <NavLink to={'/account-list'} exact>Link Actions</NavLink>
+            <NavLink to={'/account-list'} exact>Account Actions</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
