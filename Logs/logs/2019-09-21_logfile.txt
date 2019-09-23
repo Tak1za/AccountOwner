@@ -55,3 +55,36 @@
 2019-09-21 15:41:27.1200 ERROR Account with id: 46ea5275-b3ed-4c07-aa1e-f722585460fd is not present
 2019-09-21 15:43:33.9601 ERROR The given owner with id: ba8cf21f-e723-40d0-b52a-941761970b1c doesn't exist. Create an owner first
 2019-09-21 15:43:47.8809 INFO Returned all accounts from database
+2019-09-21 19:46:00.7746 INFO Returned all owners from database
+2019-09-21 19:46:00.7746 INFO Returned all owners from database
+2019-09-21 19:46:03.1789 INFO Returned all owners from database
+2019-09-21 19:46:08.5799 INFO Returned all owners from database
+2019-09-21 19:48:02.3474 INFO Returned all owners from database
+2019-09-21 19:48:10.5745 INFO Returned all owners from database
+2019-09-21 19:48:23.2010 INFO Returned all owners from database
+2019-09-21 19:48:33.5963 INFO Returned all owners from database
+2019-09-21 19:48:42.0956 INFO Returned all owners from database
+2019-09-21 19:49:02.8216 INFO Returned all owners from database
+2019-09-21 19:49:13.3893 INFO Returned all owners from database
+2019-09-21 19:49:14.8077 INFO Returned all owners from database
+2019-09-21 19:49:26.2542 INFO Returned all owners from database
+2019-09-21 19:49:29.2765 INFO Returned all owners from database
+2019-09-21 19:50:17.8595 INFO Returned all owners from database
+2019-09-21 19:50:50.9582 INFO Returned all owners from database
+2019-09-21 19:50:58.0219 INFO Returned all owners from database
+2019-09-21 19:51:16.8410 INFO Returned all owners from database
+2019-09-21 19:51:32.5948 INFO Returned all owners from database
+2019-09-21 19:51:38.4641 INFO Returned all owners from database
+2019-09-21 19:52:20.3540 INFO Returned all owners from database
+2019-09-21 19:52:46.8065 INFO Returned all owners from database
+2019-09-21 20:04:47.1700 INFO Returned all owners from database
+2019-09-21 20:05:27.1763 INFO Returned all owners from database
+2019-09-21 20:05:36.0975 INFO Returned all owners from database
+2019-09-21 20:06:45.7831 INFO Returned all owners from database
+2019-09-21 20:07:20.9739 INFO Returned all owners from database
+2019-09-21 20:07:41.8252 INFO Returned all owners from database
+2019-09-21 20:16:09.1552 INFO Returned all owners from database
+2019-09-21 20:17:34.6304 INFO Returned all owners from database
+2019-09-21 20:18:00.3714 INFO Returned all owners from database
+2019-09-21 20:19:44.5356 INFO Returned all owners from database
+2019-09-21 20:20:02.6521 INFO Returned all owners from database
